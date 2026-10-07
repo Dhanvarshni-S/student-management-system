@@ -3,8 +3,9 @@ function StudentProfile(props) {
     <div
       style={{
         border: "1px solid black",
-        padding: "15px",
-        margin: "10px",
+        padding: "20px",
+        margin: "15px 0",
+        borderRadius: "5px",
       }}
     >
       <h2>{props.name}</h2>

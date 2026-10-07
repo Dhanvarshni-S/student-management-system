@@ -12,22 +12,35 @@ function App() {
   const student2Year = "3rd Year";
 
   return (
-    <div>
+    <div
+      style={{
+        width: "100%",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center",
+      }}
+    >
       <Header />
 
-      <h2>Student 1</h2>
-      <StudentProfile
-        name={student1Name}
-        department={student1Department}
-        year={student1Year}
-      />
+      <div style={{ width: "90%", maxWidth: "600px" }}>
+        <h2>Student 1</h2>
 
-      <h2>Student 2</h2>
-      <StudentProfile
-        name={student2Name}
-        department={student2Department}
-        year={student2Year}
-      />
+        <StudentProfile
+          name={student1Name}
+          department={student1Department}
+          year={student1Year}
+        />
+
+        <h2>Student 2</h2>
+
+        <StudentProfile
+          name={student2Name}
+          department={student2Department}
+          year={student2Year}
+        />
+      </div>
 
       <Footer />
     </div>
